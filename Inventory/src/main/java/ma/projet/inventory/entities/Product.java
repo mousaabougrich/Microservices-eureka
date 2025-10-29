@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 
-public class Prodcut {
+public class Product {
     @Id
     private String id;
     private String name;
