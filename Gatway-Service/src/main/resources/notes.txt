@@ -1,0 +1,18 @@
+this is static congig wz can use loclhoste or we can use lb
+spring:
+  cloud:
+    gateway:
+      mvc:
+        routes:
+          - id: r1
+            uri: lb://CUTOMERSERVICE
+            predicates:
+              - Path=/api/customers/**
+          - id: r2
+            uri: lb://INVENTORY
+            predicates:
+              - Path=/api/products/**
+we can do dynamic too
+kayn spring cloud mvc and others in new one reactive the old one and most used
+new one based on servletes and it not use E/T bloquents
+
